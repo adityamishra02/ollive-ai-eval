@@ -28,7 +28,7 @@ def chat_with_both(message, history_oss, history_frontier):
     history_frontier.append({"role": "assistant", "content": frontier_reply})
     yield history_oss, history_frontier, ""
 
-with gr.Blocks() as demo:
+with gr.Blocks(theme=gr.themes.Soft()) as demo:
     gr.Markdown("# AI Assistant Evaluation Arena")
     gr.Markdown("Comparing Qwen2.5-0.5B (Local OSS) against Gemini 2.5 Flash (Hosted Frontier).")
     
@@ -61,4 +61,4 @@ with gr.Blocks() as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch(theme=gr.themes.Soft())
+    demo.launch()
