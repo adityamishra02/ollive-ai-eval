@@ -55,10 +55,10 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     with gr.Row():
         with gr.Column():
             gr.Markdown("### Qwen 2.5 (Open Source)")
-            chatbot_oss = gr.Chatbot(height=500)
+            chatbot_oss = gr.Chatbot(height=500, type="tuples")
         with gr.Column():
             gr.Markdown("### GPT-4o-mini (Frontier)")
-            chatbot_frontier = gr.Chatbot(height=500)
+            chatbot_frontier = gr.Chatbot(height=500, type="tuples")
             
     with gr.Row():
         msg = gr.Textbox(placeholder="Enter prompt here...", scale=4, show_label=False)
