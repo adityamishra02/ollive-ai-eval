@@ -1,0 +1,6 @@
+gradio
+langgraph
+langchain-core
+transformers
+torch
+accelerate
